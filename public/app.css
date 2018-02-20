@@ -2,3 +2,8 @@ body {
     background: yellow;
     color: black;
 }
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
