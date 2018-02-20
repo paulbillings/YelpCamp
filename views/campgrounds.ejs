@@ -1,4 +1,5 @@
 <% include partials/header %>
+
     <div class="container">
         <header class="jumbotron">
             <div class="container">
@@ -10,7 +11,7 @@
             </div>
         </header>
         
-        <div class="row text-center">
+        <div class="row text-center" id="imageRow">
             <% campgrounds.forEach(function(camp){ %>
                 <div class="col-md-3 col-sm-6">
                     <div class="thumbnail">
@@ -23,10 +24,6 @@
             <% }); %>
         </div>
     
-       
-        
-        <button>
-            <a href="/">Back to HomePage</a>
-        </button>
     </div>
+    
 <% include partials/footer %>

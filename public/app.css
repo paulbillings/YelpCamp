@@ -1,9 +1,18 @@
 body {
-    background: yellow;
+    background: white;
     color: black;
 }
 
-.row {
+#imageRow {
     display: flex;
     flex-wrap: wrap;
+}
+
+.form {
+    width: 30%;
+    margin: 25px auto;
+}
+
+#titleForm {
+    text-align: center;
 }
