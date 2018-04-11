@@ -37,6 +37,11 @@
     margin: 25px auto;
 }
 
+.profile-div {
+    width: 75%;
+    margin: 25px auto;
+}
+
 /* Google Maps */
 #map {
     height: 400px;
