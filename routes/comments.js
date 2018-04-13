@@ -65,6 +65,7 @@ router.put("/:comment_id", middleware.checkCommentOwnership,function(req, res){
             req.flash("error", "Error, something went wrong");
             res.redirect("back");
       } else {
+            req.flash("success", "Comment updated!");
             res.redirect("/campgrounds/" + req.params.id);
       }
    });
