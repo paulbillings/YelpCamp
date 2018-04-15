@@ -1,6 +1,7 @@
 var express = require("express");
 var router = express.Router();
 var passport = require("passport");
+var middleware = require("../middleware");
 var User = require("../models/user");
 var Campground = require("../models/campgrounds");
 var async = require("async");
@@ -67,7 +68,7 @@ router.get("/logout", function(req, res){
 });
 
 // user profile
-router.get("/users/:id", function(req, res){
+router.get("/users/:id", middleware.isLoggedIn, function(req, res){
     User.findById(req.params.id, function(err, foundUser){
         if(err){
             req.flash("error", err);
