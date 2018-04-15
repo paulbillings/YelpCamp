@@ -24,7 +24,6 @@ body {
 }
 
 .form {
-    width: 30%;
     margin: 25px auto;
 }
 
@@ -53,7 +52,6 @@ body {
 }
 
 .form-div {
-    width: 30%; 
     margin: 25px auto;
 }
 
@@ -61,6 +59,8 @@ body {
     width: 75%;
     margin: 25px auto;
 }
+
+
 
 /* Google Maps */
 #map {
